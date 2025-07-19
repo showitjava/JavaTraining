@@ -1,0 +1,2 @@
+# JavaTraining
+A comprehensive Java training project designed for beginners and intermediate learners. This repository includes hands-on exercises, sample projects, and real-world coding challenges to help you master core Java concepts such as OOP, data structures, exception handling, file I/O, multithreading, JDBC, and more.
