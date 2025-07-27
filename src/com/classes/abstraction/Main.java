@@ -1,6 +1,6 @@
 package com.classes.abstraction;
 
-public class Main {
+public class Main implements InterfaceDemo{
 
     static  int a =10;
 
@@ -13,6 +13,25 @@ public class Main {
         //System.out.println(ar);
         int a=-1;
         System.out.println(Main.a);
+
+        Main m  = new Main();
+        m.display();
+    }
+
+    @Override
+    public void display() {
+        System.out.println("Implementing the Interface methods!! IN main class");
+    }
+
+    @Override
+    public int sumOfNumbers(int a, int b) {
+        return 0;
+    }
+
+    @Override
+    public void javaShow() {
+        System.out.println("Implementing the Interface01 methods!! IN main class");
+
     }
 }
 
