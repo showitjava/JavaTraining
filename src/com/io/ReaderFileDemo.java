@@ -18,6 +18,9 @@ public class ReaderFileDemo {
         while (line != null) {
             System.out.print(line);
             line = br.readLine(); // read next line
+            if (line != null) {
+                System.out.println(); // print new line for next line
+            }
         }
 
         fr.close();
