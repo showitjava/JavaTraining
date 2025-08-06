@@ -1,5 +1,6 @@
 package com.io;
 
+import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
@@ -9,15 +10,14 @@ public class ReaderFileDemo {
     {
         FileReader fr = new FileReader(".\\src\\com\\io\\file1.txt");
 
+        BufferedReader br = new BufferedReader(fr);
 
 
-        System.out.println((char)fr.read());
-        int val =fr.read();
-        while(val != -1)
-        {
-            System.out.print((char) val);
-            val= fr.read();
-
+        //br.readLine();
+        String line = br.readLine();
+        while (line != null) {
+            System.out.print(line);
+            line = br.readLine(); // read next line
         }
 
         fr.close();
